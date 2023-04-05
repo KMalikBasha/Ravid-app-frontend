@@ -1,0 +1,191 @@
+<section class="banner_bg_main" >
+  <div class="m-4">
+<!-- <div class="container pad mt-3  "> -->
+
+<!-- 
+  <carousel class="mt-3 mb-3"
+[images]="images"
+[cellsToShow]="1"
+[loop]="true"
+[autoplay]="true"
+[autoplayInterval]="3000"
+></carousel> -->
+
+<div class="banner_section layout_padding">
+  <div class="container">
+     <div id="my_slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+           <div class="carousel-item active">
+              <div class="row">
+                 <div class="col-sm-12">
+                    <h1 class="banner_taital">!!YaY!! <br>The Best Is Here</h1>
+                    <div class="buynow_bt"><a (click)="allProduct()">Buy Now</a></div>
+                 </div>
+              </div>
+           </div>
+           <div class="carousel-item">
+              <div class="row">
+                 <div class="col-sm-12">
+                    <h1 class="banner_taital">HEYY!!!! <br>lets full your cart</h1>
+                    <div class="buynow_bt"><a (click)="allProduct()">Buy Now</a></div>
+                 </div>
+              </div>
+           </div>
+           <div class="carousel-item">
+              <div class="row">
+                 <div class="col-sm-12">
+                    <h1 class="banner_taital">Get Start <br>Your favourite products are hereeee...
+                      !!</h1>
+                    <div class="buynow_bt"><a (click)="allProduct()">Buy Now</a></div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+        <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+        </a>
+     </div>
+  </div>
+</div>
+
+
+  <div class="row mt-5">
+    <div class="col-md-3 mb-3" *ngFor="let item of categorylist"  >
+      <div class="card card-1"(click)="toProduct(item)">
+        <h3 class="cardimage">{{item.category_name}}</h3>
+        <p>{{item.category_description}}</p>
+      </div>
+    </div>
+
+  </div>
+<!-- </div> -->
+
+
+
+
+<div class="container pad mt-3  ">
+  <div clas="row">
+    <div class="col-6">
+
+    </div>
+    <div class="col-6">
+      <!-- <h1>hellooo</h1>
+      <div class="carousel">
+        <a class="carousel-item" href="#{{hrefs[i]}}!" *ngFor="let item of items;let i = index">
+          <img src={{item}}/>
+          </a>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+<div class="mt-5">
+
+  <footer class="bg-dark text-center text-lg-start text-white bg">
+    <div class="container p-4">
+      <div class="row mt-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Quick Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>
+                Bestsellers</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-gift fa-fw fa-sm me-2"></i>
+                Offer Zone</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class=" fab fa-dribbble fa-fw fa-sm me-2"></i>
+                Win and Earn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Any Help</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-map-marker-alt fa-fw fa-sm me-2"></i>
+                Delivery Areas</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>
+                Returns</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fab fa-napster fa-fw fa-sm me-2"></i>
+                Regulations</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fab fa-angellist fa-fw fa-sm me-2"></i>
+                Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Head Office</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Add 2 Cart</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">3rd Cross Street</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> KanyaKumari</a>
+            </li>
+            <li>
+              <a href="https://www.starbucks.in" class="text-white">
+                <i class="fas fa-coffee fa-fw fa-sm me-2"></i>Buy us A Coffee</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Write to us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white"><i class="fab fa-opencart fa-fw fa-sm me-2">
+
+              </i>Help in purchasing</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2">
+
+              </i>Check the order status</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-handshake fa-fw fa-sm me-2">
+
+              </i>Join the buisness</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-white" href="">AddToCart.Com</a>
+    </div>
+  </footer>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+

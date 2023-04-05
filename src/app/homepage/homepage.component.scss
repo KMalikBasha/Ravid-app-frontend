@@ -1,0 +1,219 @@
+
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+padding: 14px 80px 18px 36px;
+cursor: pointer;
+}
+a {
+
+  text-decoration: none !important;
+}
+.card:hover{
+   transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3{
+font-weight: 600;
+}
+
+.card img{
+position: absolute;
+top: 20px;
+right: 15px;
+max-height: 120px;
+}
+
+.buynow_bt{
+  cursor: pointer;
+}
+.card-1{
+// background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+background-image: url('../../assets/images/banner-bg.png');
+    background-repeat: no-repeat;
+  background-position: right;
+
+  background-size: 292px 139px;
+  min-height: 134px;
+}
+.cardimage{
+  color: white;
+  font-family: cursive;
+}
+.card-2{
+ background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+.card-3{
+//  background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+@media(max-width: 990px){
+.card{
+  margin: 20px;
+}
+}
+
+.banner_bg_main {
+  width: 100%;
+  float: left;
+  // background-image: url(../../assets/images/banner-bg.png);
+  background-color: lightsteelblue;
+  height: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.fade{
+  background-color: #dc0707;
+}
+
+
+.banner_taital {
+  width: 100%;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.buynow_bt {
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.buynow_bt a {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252525;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.buynow_bt a:hover {
+  background-color: #f26522;
+  color: #ffffff;
+}
+
+// footer starts
+.footer_section {
+  width: 100%;
+  float: left;
+  background-color: #252525;
+  height: auto;
+}
+
+.footer_logo {
+  width: 100%;
+  text-align: center;
+}
+
+.input_bt {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  border-bottom: 1px solid #ffffff !important;
+}
+
+.mail_bt {
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  padding: 5px 0px 5px 0px;
+  height: 60px;
+  border: 0px;
+}
+
+input.mail_bt::placeholder {
+  color: #fff;
+}
+
+.subscribe_bt {
+  width: 30%;
+  float: right;
+  font-size: 16px;
+  color: #f26522;
+  background-color: transparent;
+  padding: 20px 0px 5px 0px;
+  border-radius: 30px;
+  border: 0px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.subscribe_bt a {
+  color: #f26522;
+}
+
+.subscribe_bt a:hover {
+  color: #ffffff;
+}
+
+.footer_menu {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer_menu ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.footer_menu li {
+  float: left;
+  font-size: 16px;
+  color: #f1f1f1;
+  padding: 20px 10px 0px 10px;
+}
+
+.footer_menu li a {
+  color: #f1f1f1;
+}
+
+.footer_menu li a:hover {
+  color: #f26522;
+}
+
+.location_main {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.location_main {
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 30px 30px 30px 30px;
+}
+
+.location_main a {
+  color: #ffffff;
+}
+
+.location_main a:hover {
+  color: #f26522;
+}
+
